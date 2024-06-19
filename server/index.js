@@ -13,7 +13,8 @@ database.connectDB();
 
 app.use(
     cors({
-        origin: "https://transaction-management-system.vercel.app/",
+        origin: "https://transaction-management-system.vercel.app",
+        // origin: "http://localhost:3000",
         credentials: true,
     })
 )
@@ -24,7 +25,7 @@ app.use(
 app.use((req, res, next) => {
     res.setHeader(
         "Access-Control-Allow-Origin",
-        "https://transaction-management-system.vercel.app/"
+        "https://transaction-management-system.vercel.app"
     );
     res.setHeader(
         "Access-Control-Allow-Methods",
