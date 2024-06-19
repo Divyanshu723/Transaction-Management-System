@@ -13,7 +13,7 @@ database.connectDB();
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://transaction-management-system.vercel.app/",
         credentials: true,
     })
 )
