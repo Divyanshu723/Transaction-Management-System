@@ -17,10 +17,17 @@ app.use(
         credentials: true,
     })
 )
-
     // Routes
     app.use(express.json()); // Parse JSON bodies
     app.use('/api', apiRoutes);
+
+app.use((req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://transaction-management-system.vercel.app/");
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.setHeader("Access-Control-Max-Age", "1800");
+    res.setHeader("Access-Control-Allow-Headers", "content-type");
+    res.setHeader("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS");
+});
     
     
     // Error handling middleware
