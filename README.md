@@ -47,7 +47,7 @@ Future improvements:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/transaction-dashboard.git
+    git clone https://github.com/Divyanshu723/Transaction-Management-System.git
     cd transaction-dashboard
     ```
 ### Backend Setup
